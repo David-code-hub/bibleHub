@@ -10,7 +10,7 @@ body {
 
 @layer components {
   .btn {
-    @apply lg:mx-1 rounded-md bg-[#F0F3F9] px-3.5 py-2.5 
+    @apply lg:mx-1 rounded-xl bg-[#F0F3F9] px-6 py-3 
     text-sm font-normal text-black shadow-sm 
     hover:opacity-80 focus-visible:outline focus-visible:outline-2 
     focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
@@ -18,6 +18,10 @@ body {
 
   .btn-bg-dark {
     @apply bg-[#0d1321] text-white;
+  }
+
+  .btn-bg-green {
+    @apply bg-[#B2CC3E] text-black;
   }
 
   .btn-flat {
@@ -29,12 +33,29 @@ body {
   }
 
   .form-input-field {
-    @apply block w-full rounded-md border-0 py-2.5 px-3 text-gray-900 
+    @apply block w-full rounded-xl border-0 py-3 px-3 text-gray-900 
     shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 
     focus:ring-inset focus:ring-black sm:text-sm sm:leading-6;
   }
 
   .form-field-label {
     @apply block text-sm font-medium leading-6 text-gray-900 mt-5 mb-1;
+  }
+
+  .bg-gradient-top {
+    @apply relative left-[calc(50%-11rem)] aspect-[1155/678]
+    w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr
+    from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)]
+    sm:w-[72.1875rem];
+  }
+
+  .bg-gradient-bottom {
+    @apply relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] 
+    -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] 
+    opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem];
+  }
+
+  .btn-form {
+    @apply py-4 w-full;
   }
 }
