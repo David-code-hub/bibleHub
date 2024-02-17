@@ -9,4 +9,32 @@ body {
 }
 
 @layer components {
+  .btn {
+    @apply lg:mx-1 rounded-md bg-[#F0F3F9] px-3.5 py-2.5 text-sm font-normal text-black shadow-sm hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+  }
+
+  .btn-bg-dark {
+    @apply bg-[#0d1321] text-white;
+  }
+
+  .btn-flat {
+    @apply bg-transparent text-black;
+  }
+
+  .btn-outlined {
+    @apply bg-transparent border-solid border-2 border-[#F0F3F9];
+  }
+
+  .bg-bible-green {
+    @apply bg-[#B2CC3E];
+  }
+
+  .text-bible-green {
+    @apply text-[#B2CC3E];
+  }
+
+  .text-outlined-bible-dark {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0d1321;
+  }
 }

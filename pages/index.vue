@@ -7,13 +7,7 @@
       >
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <!-- <img
-              class="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
-            /> -->
-            <p class="font-bold">BibleHub</p>
+            <p class="font-bold">BibleHub.</p>
           </a>
         </div>
         <div class="flex lg:hidden">
@@ -26,18 +20,10 @@
             <Bars3Icon class="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a
-            v-for="item in navigation"
-            :key="item.name"
-            :href="item.href"
-            class="text-sm font-semibold leading-6 text-gray-900"
-            >{{ item.name }}</a
-          >
-        </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-            >Log in <span aria-hidden="true">&rarr;</span></a
+          <NuxtLink to="/account/signup" class="btn">Sign Up</NuxtLink>
+          <NuxtLink to="/account/login" class="btn btn-bg-dark"
+            >Log In</NuxtLink
           >
         </div>
       </nav>
@@ -53,12 +39,7 @@
         >
           <div class="flex items-center justify-between">
             <a href="#" class="-m-1.5 p-1.5">
-              <span class="sr-only">Your Company</span>
-              <img
-                class="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+              <p class="font-bold mb-6">BibleHub</p>
             </a>
             <button
               type="button"
@@ -69,23 +50,24 @@
               <XMarkIcon class="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div class="mt-6 flow-root">
-            <div class="-my-6 divide-y divide-gray-500/10">
-              <div class="space-y-2 py-6">
-                <a
-                  v-for="item in navigation"
-                  :key="item.name"
-                  :href="item.href"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >{{ item.name }}</a
+          <div class="mt-0 flow-root">
+            <div class="mb-6 divide-y divide-gray-500/10">
+              <a href="#" class="btn grid my-3 grid-cols-4 w-3/4">Sign Up</a>
+              <a href="#" class="btn btn-bg-dark grid my-3 w-3/4">Log In</a>
+              <br />
+              <div class="pt-4">
+                <p
+                  class="-mx-3 px-3 py-2.5 italic text-sm font-normal leading-7 text-gray-700 hover:bg-gray-50"
                 >
-              </div>
-              <div class="py-6">
-                <a
-                  href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Log in</a
+                  For God so loved the world, that he gave his only begotten
+                  Son, that whosoever believeth in him should not perish, but
+                  have everlasting life.
+                </p>
+                <p
+                  class="w-full text-right italic font-normal text-gray-600 text-sm"
                 >
+                  John 3:16
+                </p>
               </div>
             </div>
           </div>
@@ -124,22 +106,24 @@
       </div>
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div class="text-center">
-          <h1
-            class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
-          >
-            BibleHub
+          <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">
+            BibleHub.
           </h1>
-          <p class="mt-6 text-lg leading-8 text-gray-600">
+          <p class="mt-6 text-base leading-8 font-normal text-gray-600">
             Share your Christian walk with other believers.
           </p>
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a
-              href="#"
-              class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >Get started</a
-            >
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
-              >Learn more <span aria-hidden="true">→</span></a
+          <p
+            class="-mx-3 px-3 py-2.5 text-base font-normal leading-7 text-gray-900"
+          >
+            For God so loved the world, that he gave his only begotten Son, that
+            whosoever believeth in him should not perish, but have everlasting
+            life.
+          </p>
+          <p class="w-full font-normal text-sm">John 3:16</p>
+          <div class="mt-7 flex items-center justify-center">
+            <NuxtLink to="/" class="btn btn-bg-dark">Explore More</NuxtLink>
+            <NuxtLink to="/account/signup" class="btn btn-outlined"
+              >Create Your Account <span aria-hidden="true">→</span></NuxtLink
             >
           </div>
         </div>
@@ -177,20 +161,5 @@
 </template>
 
 <script setup lang="ts">
-//   import { ref } from 'vue'
-//   import { Dialog, DialogPanel } from '@headlessui/vue'
-//   import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
-
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
-];
-
 const mobileMenuOpen = ref(false);
 </script>
-<!-- 
-<script setup lang="ts"></script>
-
-<style scoped></style> -->
