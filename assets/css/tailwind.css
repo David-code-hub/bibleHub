@@ -10,7 +10,10 @@ body {
 
 @layer components {
   .btn {
-    @apply lg:mx-1 rounded-md bg-[#F0F3F9] px-3.5 py-2.5 text-sm font-normal text-black shadow-sm hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+    @apply lg:mx-1 rounded-md bg-[#F0F3F9] px-3.5 py-2.5 
+    text-sm font-normal text-black shadow-sm 
+    hover:opacity-80 focus-visible:outline focus-visible:outline-2 
+    focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
   }
 
   .btn-bg-dark {
@@ -25,16 +28,13 @@ body {
     @apply bg-transparent border-solid border-2 border-[#F0F3F9];
   }
 
-  .bg-bible-green {
-    @apply bg-[#B2CC3E];
+  .form-input-field {
+    @apply block w-full rounded-md border-0 py-2.5 px-3 text-gray-900 
+    shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 
+    focus:ring-inset focus:ring-black sm:text-sm sm:leading-6;
   }
 
-  .text-bible-green {
-    @apply text-[#B2CC3E];
-  }
-
-  .text-outlined-bible-dark {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #0d1321;
+  .form-field-label {
+    @apply block text-sm font-medium leading-6 text-gray-900 mt-5 mb-1;
   }
 }
