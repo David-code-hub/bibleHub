@@ -1,6 +1,8 @@
-# Nuxt 3 Minimal Starter
+### BibleHub (In build)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+#### Share | Help | Inspire fellow believers
+
+![bibleHubHome](https://github.com/David-code-hub/bibleHub/assets/55393687/97da9fb1-c2c0-4fc9-a110-f5217afb7541)
 
 ## Setup
 
@@ -37,39 +39,3 @@ yarn dev
 # bun
 bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

@@ -33,9 +33,9 @@ body {
   }
 
   .form-input-field {
-    @apply block w-full rounded-xl border-0 py-3 px-3 text-gray-900 
-    shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 
-    focus:ring-inset focus:ring-black sm:text-sm sm:leading-6;
+    @apply appearance-none ring-1 ring-gray-300 block w-full bg-white rounded-xl text-gray-700 
+    border border-gray-200 py-3.5 px-3.5 leading-tight
+    focus:outline-none focus:bg-white focus:border-gray-500;
   }
 
   .form-field-label {
