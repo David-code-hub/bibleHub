@@ -1,8 +1,6 @@
 <template>
   <div class="grid grid-rows-3 grid-flow-col gap-0 h-screen">
-    <div
-      class="row-span-3 p-4 lg:w-full md:w-4/5 sm:w-full mx-auto max-w-screen-sm my-auto"
-    >
+    <div class="row-span-3 p-4 w-full md:w-4/5 mx-auto max-w-screen-sm my-auto">
       <div class="lg:w-3/4 md:w-full mx-auto mb-1">
         <h2 class="text-2xl font-semibold text-gray-900">
           Sign Up to BibleHub.
