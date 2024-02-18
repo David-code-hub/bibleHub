@@ -1,10 +1,8 @@
 <template>
   <div class="grid grid-rows-3 grid-flow-col gap-0 h-screen">
     <div
-      class="row-span-3 p-4 lg:w-1/2 md:w-3/5 sm:w-full mx-auto max-w-screen-sm my-auto"
+      class="row-span-3 p-4 lg:w-full md:w-4/5 sm:w-full mx-auto max-w-screen-sm my-auto"
     >
-      <!-- <p class="font-bold text-2xl">BibleHub.</p> -->
-
       <div class="lg:w-3/4 md:w-full mx-auto mb-1">
         <h2 class="text-2xl font-semibold text-gray-900">
           Sign Up to BibleHub.
@@ -74,19 +72,6 @@
           </div>
         </div>
 
-        <div class="col-span-full">
-          <label for="about" class="form-field-label">Bio</label>
-          <div class="mt-2">
-            <textarea
-              id="about"
-              name="about"
-              placeholder="Tell us about yourself..."
-              rows="3"
-              class="form-input-field"
-            ></textarea>
-          </div>
-        </div>
-
         <div>
           <div class="flex items-center justify-between">
             <label for="password" class="form-field-label">Password</label>
@@ -96,7 +81,26 @@
               id="password"
               name="password"
               type="password"
-              placeholder="Enter your password"
+              placeholder="********"
+              autocomplete="current-password"
+              required
+              class="form-input-field"
+            />
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-between">
+            <label for="password" class="form-field-label"
+              >Confirm Password</label
+            >
+          </div>
+          <div class="mt-2">
+            <input
+              id="confirm-password"
+              name="confirm-password"
+              type="password"
+              placeholder="********"
               autocomplete="current-password"
               required
               class="form-input-field"
@@ -113,20 +117,18 @@
 
       <p class="mt-5 text-center text-sm text-gray-500">
         Already have an account?
-        <Nuxtlink
-          to="/account/login"
-          class="font-semibold leading-6 text-[#0d1321]"
-          >Log In</Nuxtlink
+        <NuxtLink to="/account/login" class="font-semibold text-[#0d1321]"
+          >Log In</NuxtLink
         >
       </p>
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
-// definePageMeta({
-//   layout: "account",
-// });
+<script setup>
+definePageMeta({
+  layout: "account",
+});
 </script>
 
 <style scoped></style>
