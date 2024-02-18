@@ -1,6 +1,6 @@
 ### BibleHub (In build)
 
-#### Share | Help | Inspire fellow believers
+---
 
 ![bibleHubHome](https://github.com/David-code-hub/bibleHub/assets/55393687/97da9fb1-c2c0-4fc9-a110-f5217afb7541)
 
