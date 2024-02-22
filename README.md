@@ -1,4 +1,4 @@
-### BibleHub.
+### BibleHub - UI 
 
 ![bibleBubH](https://github.com/David-code-hub/bibleHub/assets/55393687/12feea94-ba90-47c2-83b1-a3f0f6b1f6f0)
 
