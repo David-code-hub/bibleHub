@@ -5,6 +5,7 @@ tailwind x nuxt
 
 ## Setup | Nuxt 
 
+
 Make sure to install the dependencies:
 
 ```bash
